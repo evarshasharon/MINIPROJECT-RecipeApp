@@ -1,0 +1,157 @@
+body {
+    background-color: #fff5ef;
+    font-family: "Poppins", sans-serif;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.navcontainer {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo img{
+    height: 82px;
+    width: 85px;
+    margin: 5px;
+}
+.logo {
+    font-family: "Playwrite GB S", cursive;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 50px;
+    display: flex;
+    padding: 10px;
+}
+
+.navcontent {
+    display: flex;
+    gap: 40px; /* Adds space between navigation links */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navcontent li {
+    padding: 15px;
+    margin-right: 50px;
+    font-size: 25px;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.navcontent li:hover a {
+
+    color: #944c08; /* Change the color on hover for a smoother effect */
+}
+
+.search-bar {
+    padding: 12px;
+    font-size: 16px;
+    width: 400px;
+    border: 1px solid #959595 ;
+    border-radius: 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-right: 60px;
+    box-shadow: 2px 2px   rgba(188, 188, 188, 0.271);
+}
+
+.search-bar:focus {
+    border-color: #a33f00; /* Change the border color on focus for a smoother effect */
+}
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 80px;
+}
+
+.main {
+    height: 500px;
+    padding: 0 50px;
+    width: 55%;
+    
+}
+
+.main h1 {
+    color: #481E14;
+    font-size: 50px;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 5px 2px #64646481;
+}
+.main p{
+    font-size: 22px;
+}
+.main span{
+    color: #b41c3d;
+    font-size: larger;
+    text-shadow: 2px 1px black ;
+}
+.main .slogan{
+    color: #e2ac54;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 4px;
+}
+.main .slogan:hover{
+    color: #f1b56c;
+}
+button{
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+    background-color: #ffe0b9;
+    border: 2px solid rgb(112, 64, 0);
+}
+button a{
+    text-decoration: none;
+    padding: 0 10px 0 20px;
+    font-size: 20px;
+}
+button img{
+    height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+}
+button:hover{
+    background-color: #ffe0b9;
+    transition: 0.5s ease;
+    box-shadow: 5px 5px rgb(82, 48, 7);
+}
+.box {
+    text-align: center;
+    height: 500px;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 10px 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.box img {
+    height: 300px;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.box:hover {
+    transform: scale(1.02);
+}
+
+.box:hover img {
+    transform: scale(1.02);
+}
+.box .text{
+    padding: 20px;
+}
