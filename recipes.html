@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavourly | Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <section class="header">
+        <a href="#"><img src="assets/flogo.png" class="logo" alt="logo"></a>
+        <div>
+            <ul class="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active" href="#">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><img src="assets/fav.png" alt="favorites" onclick="window.location.href='favorites.html'"></li>
+                <li><a href="main.html"><b>Sign out</b></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="page-header">
+        <h2>A pinch of passion in every dish.</h2>
+        
+    </section>
+
+    <div class="heading">
+        <h2>Discover Recipes</h2>
+    </div>
+
+    <div class="card-container">
+        
+        <div class="card card1" onclick="window.location.href='sproduct.html'">
+            <img src="assets/f1.jpg" alt="">
+            <div class="card-content">
+                <h3>Quinoa and Grilled Veggie Bowl</h3><br>
+                <p>Quinoa with grilled asparagus, mushrooms, pineapple, and avocado, topped with pistachios.</p>
+                <button><a href="sproduct.html">Show recipe</a></button>
+            </div>
+        </div>
+        <div class="card card2" onclick="window.location.href='dproduct.html'">
+            <img src="assets/f2.jpg" alt="">
+            <div class="card-content">
+                <h3>Strawberry Shortcake</h3><br>
+                <p>A delightful and classic dessert featuring fluffy shortcakes topped with sweet strawberries and fresh whipped cream.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+        <div class="card card3" onclick="viewRecipe(2)">
+            <img src="assets/f3.jpg" alt="">
+            <div class="card-content">
+                <h3>Honey-Glazed Beef Skewers</h3><br>
+                <p>Tender beef cubes with a sweet honey glaze, served over creamy mashed potatoes.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+        <div class="card card4" onclick="viewRecipe(3)">
+            <img src="assets/f4.jpg" alt="">
+            <div class="card-content">
+                <h3>Veggie Fried Rice with Soft-Boiled Eggs
+                </h3><br>
+                <p>A nutritious and savory dish featuring stir-fried vegetables and rice, topped with soft-boiled eggs.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+        
+        <div class="card card5" onclick="viewRecipe(4)">
+            <img src="assets/f5.jpg" alt="">
+            <div class="card-content">
+                <h3>Strawberry Whipped Cream Waffles</h3><br>
+                <p>Delicious waffles topped with fresh strawberries and homemade whipped cream, perfect for a special breakfast or brunch.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+        <div class="card card6" onclick="viewRecipe(5)">
+            <img src="assets/f6.jpg" alt="">
+            <div class="card-content">
+                <h3>Grilled Tofu Salad Bowl</h3><br>
+                <p>A vibrant and healthy salad bowl with grilled tofu, fresh vegetables, and hard-boiled eggs, perfect for a nutritious meal.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+        <div class="card card7" onclick="viewRecipe(6)">
+            <img src="assets/f7.jpg" alt="">
+            <div class="card-content">
+                <h3> Poached Egg Gravy</h3><br>
+                <p>A rich and savory dish featuring perfectly poached eggs in a creamy, flavorful gravy, perfect for breakfast or brunch.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+        <div class="card card8" onclick="viewRecipe(7)">
+            <img src="assets/f8.jpg" alt="">
+            <div class="card-content">
+                <h3>Salami Margarita Pizza</h3><br>
+                <p>A classic margarita pizza topped with savory salami, making for a delicious and hearty meal.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+        <div class="card card9" onclick="viewRecipe(8)">
+            <img src="assets/f9.jpg" alt="">
+            <div class="card-content">
+                <h3>Cream Broccoli Bread Bowl</h3><br>
+                <p>A comforting dish where creamy broccoli soup is served inside a bread bowl, perfect for a cozy meal.</p>
+                <br><button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+        <div class="card card10" onclick="viewRecipe(9)">
+            <img src="assets/f10.jpg" alt="">
+            <div class="card-content">
+                <h3>Paneer Tikka Masala with Naan</h3><br>
+                <p>A flavorful and creamy Indian dish featuring marinated paneer cooked in a rich tomato-based sauce, served with naan.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+        <div class="card card11" onclick="viewRecipe(10)">
+            <img src="assets/f11.jpg" alt="">
+            <div class="card-content">
+                <h3>Raspberry Blueberry Pie</h3><br>
+                <p>A delightful and tangy pie filled with fresh raspberries and blueberries, perfect for dessert.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+        <div class="card card12" onclick="viewRecipe(11)">
+            <img src="assets/f12.jpg" alt="">
+            
+            <div class="card-content">
+                
+                <h3>Devil's Chocolate Cake</h3><br>
+                <p>A rich and decadent chocolate cake perfect for satisfying any chocolate craving.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

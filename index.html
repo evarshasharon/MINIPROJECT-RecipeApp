@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <section class="header">
+        <a href="#"><img src="assets/flogo.png" class="logo" alt="logo"></a>
+        <div>
+            <ul class="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><img src="assets/fav.png" alt="favorites" onclick="window.location.href='favorites.html'"></li>
+                <li><a href="main.html"><b>Sign out</b></a></li>
+            </ul>
+        </div>
+    
+    </section>
+
+        <section class="hero">
+            <h4>We bring <i>taste</i> to life!</h4>
+            <h2>Adventure of </h2>
+            <h1>Delicacies</h1>
+            <p class="comment">Check out our featured recipes this week: <br><span>Spicy Thai Curry, Vegan Pasta Primavera, and Classic Margherita Pizza !</span></p>
+            <button>
+                <a href="recipes.html">Explore recipes</a>
+                
+            </button>
+            
+            
+            <div class="box">
+                <h3>What our users are saying: </h3>
+                <p>'I loved the easy-to-follow instructions and the result was delicious!' - <span>Sarah T.</span></p>
+    
+            </div>
+        </section>
+
+    <div class="heading">
+        <h2>Trending Recipes</h2>
+    </div>
+    <div class="card-container">
+        <div class="card card1" onclick="window.location.href='sproduct.html'">
+            <img src="assets/f1.jpg" alt="">
+            <div class="card-content">
+                <h4>Quinoa and Grilled Veggie Bowl</h4>
+                <p>Quinoa with grilled asparagus, mushrooms, pineapple, and avocado, topped with pistachios.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+        <div class="card card2">
+            <img src="assets/f2.jpg" alt="">
+            <div class="card-content">
+                <h4>Sesame Chicken Salad</h4>
+                <p>Sesame-coated chicken with fresh cabbage, carrot, spinach, and a lemon wedge. A flavorful option for lunch or dinner.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+        <div class="card card3">
+            <img src="assets/f3.jpg" alt="">
+            <div class="card-content">
+                <h3> Honey-Glazed Beef Skewers</h3>
+                <p>Tender beef cubes with a sweet honey glaze, served over creamy mashed potatoes.</p>
+                <button><a href="#">Show recipe</a></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

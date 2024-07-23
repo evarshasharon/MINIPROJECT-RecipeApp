@@ -1,0 +1,256 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourly</title>
+    <link rel="icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body{
+  width: 100%;
+  background-color: #fffdf2;
+}
+.logo{
+  height: 60px;
+  width: 200px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #ffdde8;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar li{
+  list-style: none;
+  padding: 0 30px;
+  position: relative;
+
+}
+.navbar li a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #9b0048;
+  transition: 0.3s ease;
+
+}
+.navbar li a:hover{
+  color: #f21d72;
+}
+
+.navbar li a:hover,
+.navbar li a.active{
+  color: #ff5289;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 3px;
+  background: #880032;
+  position: absolute;
+  left: 30px;
+  bottom: -4px;
+  border-radius: 5px;
+}
+.hero-main{
+  background-image: url("/assets/bg5.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 10% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  
+  
+}
+h1{
+  font-size: 70px;
+  line-height: 64px;
+  color: #ffd5e3;
+}
+
+h2{
+  font-size: 55px;
+  line-height: 54px;
+  color: #ffffff;
+}
+h4{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+h6{
+  font-weight: 700;
+  font-size: 12px;
+}
+.hero-main h4{
+  font-size: 24px;
+  color: white;
+  padding-bottom: 20px;
+}
+.hero-main p{
+  padding: 20px 0 20px 0;
+  color: #ffdee8;
+  font-size: 20px;
+}
+.headline{
+    padding: 30px;
+    backdrop-filter: blur(60px);
+    border-radius: 20px;
+}
+.headline button{
+  align-items: center;
+  display: flex;
+  border-radius: 40px;
+  background-color: rgb(255, 219, 241);
+  border: 2px solid rgba(70, 8, 36, 0.741);
+}
+.headline button a{
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  font-size: 16px;
+  color:#530429;
+  font-weight: 500;
+}
+
+.headline button:hover{
+  background-color: #ffe6cb;
+  transition: 0.3s ease;
+  box-shadow: 5px 5px rgb(82, 48, 7);
+}
+.headline button a:hover{
+  color: #612800;
+}
+/*Start Media Query*/
+@media (max-width:850px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 300px;
+    background-color: #f9f5e7;
+    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.06);
+    padding: 80px 0 0 10px;
+  }
+}
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f7e8f2;
+    margin: 10px;
+    height: 200px;
+    padding: 30px;
+}
+.newsletter .form{
+    display: flex;
+    width: 40%;
+}
+.newsletter h4{
+    color: #880032;
+    font-size: 25px;
+}
+.newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 2px 2px 2px 2px rgba(64, 64, 64, 0.104);
+}
+
+.newsletter button{
+
+  display: flex;
+  padding: 14px;
+  font-size: 16px;
+  color: white;
+  font-weight: 800;
+  border-radius: 4px;
+  background-color: rgb(164, 47, 119);
+  border: 2px solid rgba(70, 8, 36, 0.3);
+  white-space: nowrap;
+  border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+</style>
+</head>
+<body>
+    <section class="header">
+        <a href="#"><img src="assets/flogo.png" class="logo" alt="logo"></a>
+        <div>
+            <ul class="navbar">
+                <li><a href="login.html">Home</a></li>
+                <li><a href="login.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html"><b>Login</b></a></li>
+            </ul>
+        </div>
+    
+    </section>
+
+        <section class="hero-main">
+            <div class="headline">
+            <h2>Welcome to </h2><h1>Flavourly</h1> <br> <h3> – Where Every Meal is an Adventure!</h3>
+            <p>Explore a World of Flavors with Our Handpicked Recipes.</p>
+            <button><a href="login.html">Start Cooking Now!</a></button>
+        
+        </div>
+            
+            </section>
+            <section class="newsletter">
+                <div class="newstext">
+                    <h4>Sign Up For Newsletter</h4>
+                    <br>
+                    <p>Join Our Foodie Community for Exclusive Tips and Recipes</p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Your email address">
+                    <button>Sign Up</button>
+                </div>
+
+            </section>
+
+            <footer>
+                
+            </footer>
+    <script src="script.js"></script>
+</body>
+</html>
